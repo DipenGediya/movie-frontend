@@ -1,13 +1,156 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================ header ======================== */
+
+a.mx-3.text-light.p-0 {
+  background-color: #dc3545;
+  padding: 5px 10px !important;
+  border-radius: 5px;
+}
+
+.rating-section {
+  border-radius: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  padding: 12px 24px;
+  margin: 16px 0px 0px;
+  max-width: 446px;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+}
+
+.rating-section .rate button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+  padding: 8px 12px;
+  border: none;
+  color: rgb(26, 26, 26);
+}
+
+.theater p {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  padding: 2px 8px;
+  border-radius: 2px;
+  align-self: flex-start;
+  margin-top: 8px;
+
+}
+
+.ticket-btn{
+  background-color: rgb(248, 68, 100);
+}
+
+.share {
+  display: flex;
+  height: 48px;
+  width: 122px;
+  background-color: rgba(34, 34, 34, 0.8);
+  opacity: 0.8;
+  padding: 0px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.share i {
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+/* ======================= moviesBooking ===================== */
+
+.allAbout-movies {
+  padding: 1px 0 30px;
+  background: #f2f2f2;
+}
+
+.about-movie h4 ,
+.seat-type  h5{
+  font-size: 13px;
+  color: #666;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 11px;
+  border: 1px solid #666;
+  margin-left: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.allAbout-movies .movie-date{
+  background-color: white; 
+}
+
+.allAbout-movies .movie-screen{
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px #ede6e6;
+}
+
+/* ============================== movies - booking ============================= */
+
+.movie-time .btn{
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.movie-time .btn.active {
+  background-color: #dc3545;
+  color: white;
+}
+
+.seat-row p {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.seat-col .seat-available ,
+.seat-col .seat-unavailable{
+  border: 1px solid rgb(230, 227, 222);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.seat-col .seat-unavailable{
+  background-color: #f2f2f2;
+}
+
+.seat-col .seat-available:hover{
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+  cursor: pointer;
+}
+
+.seat-col .seat-unavailable:hover{
+  cursor: not-allowed;
 }
